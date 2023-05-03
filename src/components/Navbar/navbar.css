@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+  position:fixed;
+  display: block;
+  background-color: #333;
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  padding: 12px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  /* text-align: center; */
+}
+.topnav a:hover {
+  background-color: #000;
+  color: white;
+}
+
+.home {
+  background-color: var(--myBlue)!important;
+  margin: 5px 0 5px 5px;
+  width: fit-content;
+  color: white;
+  border-radius: 20px;
+}
+.home:hover{
+  background-image: linear-gradient(var(--myBlue),silver,white,rgba(0, 0, 255, 0.103));
+  color: var(--myBlue)!important;
+}
+
+.nav-link {
+  margin: 5px 0 5px 5px;
+  width: fit-content;
+  border-radius: 20px;
+}
+.nav-link:hover {
+  color: var(--myBlue)!important;
+  background-color: white!important;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.edit-button{
+  background-color: #555;
+  color: white;
+  font-size: 17px;
+  padding: 12px;
+  border: none;
+  margin: 8px 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive {float: none;}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
